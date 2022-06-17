@@ -1,7 +1,7 @@
 
 import './App.css';
 import { Routes, Route } from "react-router-dom";
-import Homepage from './pages/HomePage';
+import HomePage from './pages/HomePage';
 import AllBeers from './pages/AllBeersPage';
 import RandomBeer from './pages/RandomBeerPage';
 import AddBeer from './pages/AddBeerPage';
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/beers" element={<AllBeers />} />
         <Route path="/random-beer" element={<RandomBeer />} />
         <Route path="/new-beer" element={<AddBeer />} />
