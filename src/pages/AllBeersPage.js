@@ -22,11 +22,11 @@ function AllBeers(props) {
             <h3>All the beers</h3>
             {beers.map((beer) => (
                 <div key={beer._id} className="card">
-                    <img src={beer.image_url} style={{ width: 10 }} alt={beer.name} />
+                    <img src={beer.image_url} style={{ width: 50 }} alt={beer.name} />
                     {beer.name}
                     {beer.tagline}
                     {beer.contributed_by}
-                    <Link to="/beers/:beerId">Go to beer</Link>
+                    <Link to={`/beers/${beer._id}`}>Go to beer</Link>
                 </div>
             ))}
         </div>
